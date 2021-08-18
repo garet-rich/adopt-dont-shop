@@ -11,7 +11,7 @@ This is a pet adoption platform built with Rails 5.2.6
 
 
 ## Setup
-Database schema
+#Database schema
 <img width="640" alt="db_schema" src="https://user-images.githubusercontent.com/62623715/129977075-75eb46b4-a03b-4758-b8d8-eb2f801d7ed1.png">
 
 Download Instructions: 
