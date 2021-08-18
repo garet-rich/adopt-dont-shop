@@ -1,24 +1,35 @@
-# README
+# Adopt_Dont_Shop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project By: [Garet Rich](https://github.com/garet-rich)
 
-Things you may want to cover:
+## About
+This is a pet adoption platform built with Rails 5.2.6
 
-* Ruby version
+## In Action
+### Using Application:
+![Using Application]
 
-* System dependencies
+# [Live Application]
 
-* Configuration
+## Setup
+Download Instructions: 
+```bash 
+git clone [this file path]
+cd adopt_dont_shop
+```
 
-* Database creation
+Run Instructions:
+```bash 
+cd adopt_dont_shop
+rails server
+```
 
-* Database initialization
+Test Instructions:
+```bash 
+...
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Technologies Used:
+* Ruby
+* Rails
+* RSpec
