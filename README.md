@@ -27,6 +27,7 @@ rails server
 
 Test Instructions:
 ```bash 
+rspec spec
 ...
 ```
 
