@@ -1,9 +1,9 @@
 <h1>Shelters</h1>
 <% @shelters.each do |shelter| %>
-  <h2><%= @shelters.name %></h2>
-  <p>Foster Program: <%= @shelters.foster_program %>
-    Name: <%= @shelters.name %>
-    Address: <%= @shelters.address %>
-    City, State: <%= @shelters.city %> , <%= @shelters.state %>
+  <h2><%= shelter.name %></h2>
+  <p>Foster Program: <%= shelter.foster_program %>
+    Name: <%= shelter.name %>
+    Address: <%= shelter.address %>
+    City, State: <%= shelter.city %> , <%= shelter.state %>
   </p>
 <% end %>
