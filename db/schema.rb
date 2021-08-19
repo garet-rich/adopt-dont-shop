@@ -10,54 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_18_214151) do
+ActiveRecord::Schema.define(version: 2021_08_19_193827) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "pets", force: :cascade do |t|
-    t.boolean "adoptable"
-    t.integer "age"
-    t.string "color"
-    t.string "breed"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "shelter_id"
-    t.index ["shelter_id"], name: "index_pets_on_shelter_id"
-  end
-
-  create_table "shelters", force: :cascade do |t|
-    t.boolean "foster_program"
-    t.string "name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "veterinarians", force: :cascade do |t|
-    t.integer "review_rating"
-    t.string "name"
-    t.string "schedule"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "veterinary_offices_id"
-    t.index ["veterinary_offices_id"], name: "index_veterinarians_on_veterinary_offices_id"
-  end
-
-  create_table "veterinary_offices", force: :cascade do |t|
-    t.boolean "overnight_stay"
-    t.integer "max_capacity"
-    t.string "name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "pets", "shelters"
-  add_foreign_key "veterinarians", "veterinary_offices", column: "veterinary_offices_id"
 end
