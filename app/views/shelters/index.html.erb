@@ -2,9 +2,8 @@
 <% @shelters.each do |shelter| %>
   <h2><%= shelter.name %></h2>
   <p>
-    Foster Program: <%= shelter.foster_program %>
-    Name: <%= shelter.name %>
-    Address: <%= shelter.address %>
-    City, State: <%= shelter.city %> , <%= shelter.state %>
+    Foster Program: <%= shelter.foster_program %> <br>
+    Address: <%= shelter.address %> <br>
+    City, State: <%= shelter.city %> , <%= shelter.state %> <br>
   </p>
 <% end %>
