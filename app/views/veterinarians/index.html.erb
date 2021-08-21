@@ -1,1 +1,8 @@
 <h1>Veterinarians</h1>
+<% @veterinarians.each do |vet| %>
+  <h2><%= vet.name %></h2>
+  <p>
+    Review Rating: <%= vet.review_rating %> <br>
+    Schedule: <%= vet.schedule %> <br>
+  </p>
+<% end %>
