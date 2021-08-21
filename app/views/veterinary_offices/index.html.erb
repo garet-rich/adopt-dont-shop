@@ -1,0 +1,10 @@
+<h1>Veterinary Offices</h1>
+<% @veterinary_offices.each do |office| %>
+  <h2><%= office.name %></h2>
+  <p>
+    Address: <%= office.address %> <br>
+    City, State: <%= office.city %> , <%= office.state %> <br>
+    Overnight Stay: <%= office.overnight_stay %> <br>
+    Max Capacity: <%= office.max_capacity %> <br>
+  </p>
+<% end %>
